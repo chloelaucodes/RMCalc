@@ -4,43 +4,43 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.print("\"(e)ncode\" or \"(n)umber\": ");
-        String str = scan.next();
+//        System.out.print("\"(e)ncode\" or \"(n)umber\": ");
+//        String str = scan.next();
         int x, y, y1, y2;
-        switch (str) {
-            case "e":
-                System.out.print("\"+\" or \"-\": ");
-                String dir = scan.next();
-
-                switch (dir) {
-                    case "+":
-                        System.out.print("R+");
-                        x = scan.nextInt();
-                        System.out.print("L");
-                        y = scan.nextInt();
-                        System.out.println("Number is: " + (int) Math.pow(2, (2 * x)) * (2 * y + 1));
-                        break;
-                    case "-":
-                        System.out.print("R-");
-                        x = scan.nextInt();
-                        System.out.print("L");
-                        y1 = scan.nextInt();
-                        System.out.print("L");
-                        y2 = scan.nextInt();
-                        System.out.println("Number is: " +
-                                (int) Math.pow(2, (2 * x) + 1) *
-                                        (2 * ((int) Math.pow(2, y1) * (2 * y2 + 1) - 1) + 1));
-                        break;
-                    default:
-                        break;
-                }
-                return;
-            case "n":
+//        switch (str) {
+//            case "e":
+//                System.out.print("\"+\" or \"-\": ");
+//                String dir = scan.next();
+//
+//                switch (dir) {
+//                    case "+":
+//                        System.out.print("R+");
+//                        x = scan.nextInt();
+//                        System.out.print("L");
+//                        y = scan.nextInt();
+//                        System.out.println("Number is: " + (int) Math.pow(2, (2 * x)) * (2 * y + 1));
+//                        break;
+//                    case "-":
+//                        System.out.print("R-");
+//                        x = scan.nextInt();
+//                        System.out.print("L");
+//                        y1 = scan.nextInt();
+//                        System.out.print("L");
+//                        y2 = scan.nextInt();
+//                        System.out.println("Number is: " +
+//                                (int) Math.pow(2, (2 * x) + 1) *
+//                                        (2 * ((int) Math.pow(2, y1) * (2 * y2 + 1) - 1) + 1));
+//                        break;
+//                    default:
+//                        break;
+//                }
+//                return;
+//            case "n":
                 System.out.print("number to be evaluated: ");
                 int num = scan.nextInt();
                 scan.close();
                 System.out.println(numbers(num));
-        }
+//        }
 
     }
 
